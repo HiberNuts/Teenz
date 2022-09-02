@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+*
+{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+.prenavcontainer{
+    height: 20px;
+    width: 100vw;
+    background-color: rgb(47, 0, 33);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navcontainer{
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: black;
+    color: white;
+}
+
+.navinnercontainer{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlogocontainer span{
+    font-size: 26px;
+    letter-spacing:10px
+}
+
+.navicons{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
