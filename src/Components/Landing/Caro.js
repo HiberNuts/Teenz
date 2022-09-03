@@ -1,9 +1,7 @@
 import React from "react";
-import img1 from "./l1.jpg";
-import img2 from "./l2.jpg";
-import img3 from "./l3.jpg";
-import img4 from "./l4.jpg";
-import img5 from "./l5.jpg";
+import img1 from "./l1-min.jpg";
+import img4 from "./l4-min.jpg";
+import img5 from "./l5-min.jpg";
 export const Caro = () => {
 	return (
 		<div

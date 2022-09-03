@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
-*
-{
-    padding: none;
-    margin: none;
-    box-sizing: border-box;
-}
+
 
 .prenavcontainer{
     height: 20px;
@@ -53,4 +48,21 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
+}
+
+.navoptions{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navoptions span{
+    padding: 10px;
+}
+
+.navoptions span:hover{
+    position: relative;
+
+    bottom:  5px;
+    cursor: pointer;
 }

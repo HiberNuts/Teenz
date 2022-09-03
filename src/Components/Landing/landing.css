@@ -81,12 +81,13 @@ img{
 
 .ourbs
 {
-    /* padding: 20px; */
-    /* background-color: antiquewhite; */
-    /* margin-top: 50px; */
+   
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
 }
 
@@ -94,4 +95,15 @@ img{
 {
     font-size: 36px;
     font-weight: 400;
+}
+
+.bsgrid{
+    margin-top: 60px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 40px;
+    height: 100%;
+
+
 }
