@@ -1,7 +1,103 @@
-.testimonialscontianer
-{
-    margin-top: 140px;
-    height: 400px;
-    width: 100%;
-    background-color: black;
+.testimonialscontianer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  min-height: 520px;
+  width: 100%;
+  height: 500px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  
+}
+h2 {
+  margin-top: -140px;
+}
+
+.testWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+  min-width: 100%;
+  transition: all 1s ease-in-out;
+  position: absolute;
+}
+.testWrapper>h2{
+    margin-top: 10px;
+}
+.individuals {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.individuals-test {
+  display: flex;
+  min-width: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+.individuals-test > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-content {
+  width: 60%;
+  padding: 15px;
+}
+
+.test-btns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+ z-index: 100;
+}
+
+.test-btns > button {
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  color: white;
+  height: 50px;
+
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+}
+.test-btns > button:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px) {
+  .testimonialscontianer {
+    min-height: 750px;
+    padding: 1px;
+  }
+  .h2 {
+    margin-top: 0px;
+  }
+  .testimonial-content {
+    width: 80%;
+    padding: 15px;
+  }
 }
