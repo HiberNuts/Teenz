@@ -19,18 +19,7 @@ export const Caro = () => {
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner">
-				<div
-					class="carousel-item active"
-					style={{
-						// height: "700px",
-						backgroundColor: "black",
-						paddingLeft: "40px",
-						paddingRight: "40px"
-
-						// position: "absolute"
-						// backgroundImage: "url('./l1.jpg')"
-					}}
-				>
+				<div class="carousel-item active" style={{}}>
 					<div className="limginfo">
 						<span className="limginfo1">Lorem ipsum, dolor. Quo odio t</span>
 						<span className="limginfo2">
@@ -46,15 +35,7 @@ export const Caro = () => {
 						height={"700px"}
 					/>
 				</div>
-				<div
-					class="carousel-item"
-					style={{
-						height: "700px",
-						backgroundColor: "black",
-						paddingLeft: "40px",
-						paddingRight: "40px"
-					}}
-				>
+				<div class="carousel-item">
 					<div className="limginfo">
 						<span className="limginfo1">Lorem ipsum, dolor. Quo odio t</span>
 						<span className="limginfo2">
@@ -70,15 +51,7 @@ export const Caro = () => {
 						height={"700px"}
 					/>
 				</div>
-				<div
-					class="carousel-item "
-					style={{
-						height: "700px",
-						backgroundColor: "black",
-						paddingLeft: "40px",
-						paddingRight: "40px"
-					}}
-				>
+				<div class="carousel-item ">
 					<div className="limginfoL">
 						<span className="limginfo1">Lorem ipsum, dolor. Quo odio t</span>
 						<span className="limginfo2">

@@ -107,3 +107,69 @@ img{
 
 
 }
+
+.carousel-item{
+  height: 700px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: black;
+}
+
+
+@media only screen and (max-width: 1067px) {
+    .carousel-item{
+      height: 500px;
+    }
+
+    .limginfo1
+    {
+      font-size: 16px;
+    }
+
+    .limginfo2{
+      font-size: 25px;
+    }
+
+    .limginfo button, .limginfoL button{
+      border: none;
+      border-radius: 2px;
+      width: 110px;
+      padding: 10px;
+      background-color: rgb(47, 0, 33);
+      color: white;
+  }
+
+
+
+.limginfoL{
+  height: 140px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 300px;
+
+
+}
+
+.limginfo{
+  height: 140px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translateY(-50%);
+  width: 300px;
+
+
+}
+  }

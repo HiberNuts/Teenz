@@ -48,10 +48,11 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 .individuals-test > img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 .testimonial-content {
   width: 60%;
