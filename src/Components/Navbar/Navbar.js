@@ -9,9 +9,29 @@ export const Navbar = () => {
 				</div>
 				<div className="navoptions">
 					<span className="navlink1">Gallery</span>
-					<span className="navlink2">Testimonials</span>
+					<span
+						className="navlink2"
+						onClick={() => {
+							// document.getElementById("contactusdiv").scrollIntoView();
+							document.getElementById("testimonialsdiv").scrollIntoView({
+								behavior: "smooth"
+							});
+						}}
+					>
+						Testimonials
+					</span>
 					<span className="navlink3">About Us</span>
-					<span className="navlink4">Contact Us</span>
+					<span
+						onClick={() => {
+							// document.getElementById("contactusdiv").scrollIntoView();
+							document.getElementById("contactusdiv").scrollIntoView({
+								behavior: "smooth"
+							});
+						}}
+						className="navlink4"
+					>
+						Contact Us
+					</span>
 				</div>
 				<div className="navicons">
 					<i class="fa-solid fa-magnifying-glass"></i>
