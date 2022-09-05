@@ -23,14 +23,12 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     justify-content: center;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
     background-color: black;
     color: white;
 }
 
 .navinnercontainer{
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -62,7 +60,20 @@
 
 .navoptions span:hover{
     position: relative;
-
     bottom:  5px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 450px) {
+    .navoptions span{
+        padding: 2px;
+    }
+    .navlogocontainer span{
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    
+
+
 }
