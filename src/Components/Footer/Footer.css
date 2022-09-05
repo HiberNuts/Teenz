@@ -1,0 +1,16 @@
+.footercontainer{
+    height: 300px;
+    width: 100vw;
+    background-color: black;
+}
+
+
+.footerinnercontainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}

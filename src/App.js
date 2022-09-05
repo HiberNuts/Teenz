@@ -14,7 +14,6 @@ function App() {
 					<Route path="/" element={<Landing />}></Route>
 				</Routes>
 			</BrowserRouter>
-			,
 		</div>
 	);
 }
