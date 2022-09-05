@@ -70,10 +70,24 @@
         padding: 2px;
     }
     .navlogocontainer span{
-        font-size: 15px;
+        font-size: 20px;
         letter-spacing: 5px;
     }
     
 
+    .navicons{
+        font-size: 15px;
+        width: 100px;
+    }
 
+}
+
+@media screen and (max-width:638px) {
+    .navoptions{
+        display: none;
+    }
+
+    .Typewriter__wrapper{
+        font-size: 10px;
+    }
 }

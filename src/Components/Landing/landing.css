@@ -176,8 +176,73 @@ img{
   }
 
 
+  @media screen and (max-width:638px) {
+
+    .limginfoL{
+      height: 140px;
+      flex-direction: column;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      font-family: 'Rubik', sans-serif;
+      position: absolute;
+      top: 40%;
+      right: 5%;
+      transform: translateY(-50%);
+      width: 200px;
+    
+    
+    }
+    
+    .limginfo{
+      height: 140px;
+      flex-direction: column;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      font-family: 'Rubik', sans-serif;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translateY(-50%);
+      width: 200px;
+    
+    
+    } 
+
+    .carousel-item{
+      padding-left: 0px;
+      padding-right: 0px;
+      height: 400px;
+    }
+
+    .limginfo1
+    {
+      font-size: 14px;
+    }
+
+    .limginfo2{
+      font-size: 20px;
+    }
+
+    .limginfo button, .limginfoL button{
+      border: none;
+      border-radius: 2px;
+      width: 90px;
+      padding: 8px;
+      background-color: rgb(47, 0, 33);
+      color: white;
+  }
+  }
+
+  @media only screen and  (max-width:563px) {
+    .bsgrid{
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+  }
+
   
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   img{
     object-fit: contain;
     object-position: center;
@@ -239,4 +304,4 @@ img{
     padding: 5px;
   }
   
-}
+} */
