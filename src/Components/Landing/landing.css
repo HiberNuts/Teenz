@@ -101,7 +101,7 @@ img{
     margin-top: 60px;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     height: 100%;
 
@@ -172,4 +172,16 @@ img{
 
 
 }
+  }
+
+
+  @media only screen and (max-width:563px)
+  {
+    .bsgrid{
+      
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      
+  
+  
+  }
   }
