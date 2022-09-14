@@ -32,7 +32,7 @@ export const Caro = () => {
 						class="d-block w-100"
 						src={img5}
 						alt="First slide"
-						height={"700px"}
+						style={{ height: "700px" }}
 					/>
 				</div>
 				<div class="carousel-item">
@@ -48,7 +48,7 @@ export const Caro = () => {
 						class="d-block w-100"
 						src={img4}
 						alt="Second slide"
-						height={"700px"}
+						style={{ height: "700px" }}
 					/>
 				</div>
 				<div class="carousel-item ">
@@ -64,7 +64,7 @@ export const Caro = () => {
 						class="d-block w-100"
 						src={img1}
 						alt="Third slide"
-						height={"700px"}
+						style={{ height: "700px" }}
 					/>
 				</div>
 			</div>

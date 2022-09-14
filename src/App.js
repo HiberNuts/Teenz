@@ -16,7 +16,6 @@ function App() {
 					<Route path="/" element={<Wedding />}></Route>
 				</Routes>
 			</BrowserRouter>
-			,
 		</div>
 	);
 }
