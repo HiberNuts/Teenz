@@ -6,6 +6,7 @@ import { PreNav } from "./Components/PreNav/PreNav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Wedding } from "./Components/Pages/Wedding";
 import { Fabrics } from "./Components/Pages/Fabrics";
+import { Ordernow } from "./Components/Pages/Ordernow";
 import Scrolltotop from "./Scrolltotop";
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/" element={<Landing />}></Route>
 					<Route path="/wedding" element={<Wedding />}></Route>
 					<Route path="/fabrics" element={<Fabrics />}></Route>
+					<Route path="/ordernow/:type" element={<Ordernow />}></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>

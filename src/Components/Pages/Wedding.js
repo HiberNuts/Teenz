@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "aos/dist/aos.css";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
@@ -8,6 +9,8 @@ import img2 from "./pexels-photomix-company-291738.jpg";
 import img3 from "./pexels-devan-manuel-9164674.jpg";
 import AOS from "aos";
 export const Wedding = () => {
+	const navigate = useNavigate();
+
 	useEffect(() => {
 		AOS.init({
 			duration: 1000,
@@ -41,7 +44,13 @@ export const Wedding = () => {
 							repudiandae voluptates reprehenderit eum consequuntur, earum
 							temporibus. Vitae exercitationem earum vero ipsum?
 						</p>
-						<button data-aos="fade-left" className="buywedding">
+						<button
+							data-aos="fade-left"
+							className="buywedding"
+							onClick={() => {
+								navigate("/ordernow/wedding");
+							}}
+						>
 							Order Now
 						</button>
 					</div>

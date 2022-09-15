@@ -61,17 +61,9 @@
 
 .featureswed{
     margin-top: 70px;
-    /* padding-left: 70px; */
-    /* padding-right: 70px; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center;      */
     width: 75%;
-    /* background-color: black; */
-    /* font-family: 'Dancing Script', cursive; */
-    /* background-color: black; */
-    /* color: white; */
     margin-bottom: 70px ;
 }
 

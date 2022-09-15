@@ -14,7 +14,7 @@ export const Navbar = () => {
 						navigate("/");
 					}}
 				>
-					<span>TEENZ</span>
+					<span>Tina Rosario</span>
 				</div>
 				<div className="navoptions">
 					<span className="navlink1">Gallery</span>
