@@ -3,15 +3,26 @@ import "aos/dist/aos.css";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 import "./Wedding.css";
+import img1 from "./pexels-olya-kobruseva-4661261-min.jpg";
+import img2 from "./pexels-photomix-company-291738.jpg";
+import img3 from "./pexels-devan-manuel-9164674.jpg";
 import AOS from "aos";
 export const Wedding = () => {
 	useEffect(() => {
 		AOS.init({
-			duration: 1000
+			duration: 1000,
+			once: true
 		});
 	}, []);
 	return (
-		<div>
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center"
+				// backgroundColor: "black"
+			}}
+		>
 			{/* <Navbar></Navbar> */}
 			<div className="weddinglanding">
 				<div className="weddinginner">
@@ -39,8 +50,55 @@ export const Wedding = () => {
 			<div className="featureswed">
 				{/* <span className="featurewedhead">Our Products</span> */}
 				<div className="featurediv">
-					<div>img</div>
-					<div>content</div>
+					<div className="featuredimgdiv" data-aos="fade-left">
+						<img src={img1} alt="" />
+					</div>
+					<div className="featuedcontentdiv">
+						<span className="featuredcontectheading">Why lorem ?</span>
+						<span>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sit
+							facilis optio modi fugiat. Est voluptatum consectetur unde
+							quibusdam nisi, architecto nihil, sit illo quas ea, ipsam
+							blanditiis? Numquam, consequatur. Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Sunt sed minus ea cumque, nulla
+							laborum, soluta illo consectetur nam numquam iusto facere quia
+							nobis illum suscipit cupiditate sit excepturi animi.
+						</span>
+					</div>
+				</div>
+				<div className="featurediv2" data-aos="fade-right">
+					<div className="featuredimgdiv2">
+						<img src={img2} alt="" />
+					</div>
+					<div className="featuedcontentdiv2" data-aos="fade-right">
+						<span className="featuredcontectheading">What's new ?</span>
+						<span>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sit
+							facilis optio modi fugiat. Est voluptatum consectetur unde
+							quibusdam nisi, architecto nihil, sit illo quas ea, ipsam
+							blanditiis? Numquam, consequatur. Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Sunt sed minus ea cumque, nulla
+							laborum, soluta illo consectetur nam numquam iusto facere quia
+							nobis illum suscipit cupiditate sit excepturi animi.
+						</span>
+					</div>
+				</div>
+				<div className="featurediv" data-aos="fade-left">
+					<div className="featuredimgdiv">
+						<img src={img3} alt="" />
+					</div>
+					<div className="featuedcontentdiv">
+						<span className="featuredcontectheading">What we have ?</span>
+						<span>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sit
+							facilis optio modi fugiat. Est voluptatum consectetur unde
+							quibusdam nisi, architecto nihil, sit illo quas ea, ipsam
+							blanditiis? Numquam, consequatur. Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Sunt sed minus ea cumque, nulla
+							laborum, soluta illo consectetur nam numquam iusto facere quia
+							nobis illum suscipit cupiditate sit excepturi animi.
+						</span>
+					</div>
 				</div>
 			</div>
 			<Footer></Footer>

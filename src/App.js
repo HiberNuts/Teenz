@@ -6,11 +6,13 @@ import { PreNav } from "./Components/PreNav/PreNav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Wedding } from "./Components/Pages/Wedding";
 import { Fabrics } from "./Components/Pages/Fabrics";
+import Scrolltotop from "./Scrolltotop";
 function App() {
 	return (
 		<div className="App">
 			<PreNav></PreNav>
 			<BrowserRouter>
+				<Scrolltotop></Scrolltotop>
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Landing />}></Route>
