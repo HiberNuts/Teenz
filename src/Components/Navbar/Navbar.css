@@ -33,11 +33,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 
 .navlogocontainer span{
     font-size: 26px;
-    letter-spacing:10px
+    letter-spacing:10px;
+    cursor: pointer;
 }
 
 .navicons{
