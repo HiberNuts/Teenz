@@ -1,0 +1,21 @@
+
+
+.fabric{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.fabric > .carousel{
+    background-color: black;
+}
+
+.fabric>h4{
+    color: white;
+  margin:0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+    background-color: black;
+}
