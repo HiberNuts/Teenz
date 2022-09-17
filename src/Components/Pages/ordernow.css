@@ -1,0 +1,51 @@
+.ordernowcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .orderinnercontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.wdorheading{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.wdorh2{
+    margin-bottom: 30px;
+    font-size: 18px ;
+}
+
+.wdsubbt{
+    margin-top: 25px;
+    border: none;
+    background-color: rgb(82, 0, 57);
+    padding: 5px 20px;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    /* align-self: flex-end; */
+    cursor: pointer;
+}
+
+.wdsubbt span{
+
+margin-right: 10px;
+font-size: 16px;
+}
+
+
+.wdsubbt i {
+    font-size: 12px;
+}
