@@ -19,72 +19,73 @@ export const Fabrics = () => {
           clickable={true}
           classes={{ backgroundColor: "rgb(255,255,255)" }}
           media={{
-            "@media (max-width: 900px)": {
+            "@media (max-width: 700px)": {
               width: "600px",
-              height: "300px",
+              height: "400px",
             },
             "@media (min-width: 900px)": {
               width: "960px",
-              height: "600px",
+              height: "500px",
             },
           }}
         >
           <div onClick={() => setclickValue(1)}>
             <img
+              className="fabric-image"
               id="#image"
               src="https://img.freepik.com/premium-photo/popular-banana-yellow-fabric-waves-background-texture-pattern-yellow-fabric_328515-45.jpg?size=626&ext=jpg"
               alt="title or description"
-              style={{ width: "100%", height: "350px" }}
+              // style={{ width: "100%", height: "350px" }}
             />
           </div>
           <div onClick={() => setclickValue(2)}>
             <img
-              id="#image"
+              className="fabric-image"
               src="https://cdn.pixabay.com/photo/2016/07/12/11/45/towels-1511875__340.jpg"
               alt="jute"
               data-action="#here"
-              style={{ width: "100%", height: "350px" }}
+              // style={{ width: "100%", height: "350px" }}
               // data-action="http://andyyou.github.io/react-coverflow/"
             />
           </div>
           <div onClick={() => setclickValue(3)}>
             <img
-              id="#image"
+              className="fabric-image"
               src="https://cdn.pixabay.com/photo/2016/10/17/13/46/fabric-1747649__340.jpg"
               alt="linen"
-              style={{ width: "100%", height: "350px" }}
+              // style={{ width: "100%", height: "350px" }}
               // data-action="http://andyyou.github.io/react-coverflow/"
             />
           </div>
 
           <div onClick={() => setclickValue(4)}>
             <img
-              id="#image"
+              className="fabric-image"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRpr8vTgAFLzVdk2uy_oVTnW6coc3QNPfH7g&usqp=CAU"
               alt="title or description"
-              style={{ width: "100%", height: "350px" }}
+              // style={{ width: "100%", height: "350px" }}
               // data-action="http://andyyou.github.io/react-coverflow/"
             />
           </div>
 
-          <div onClick={() => setclickValue(5)}>
+          {/* <div  style={{ width: "200px"}}  onClick={() => setclickValue(5)}>
             <img
-              id="#image"
+              className="fabric-image"
               src="https://img.freepik.com/free-photo/sack-cocoa-beans-with-stack-chocolate-bars-wooden-table_23-2147873753.jpg?size=626&ext=jpg"
               alt="title or description"
-              style={{ width: "100%", height: "350px" }}
+              // style={{ width: "100%", height: "350px" }}
               // data-action="http://andyyou.github.io/react-coverflow/"
             />
           </div>
-          <div onClick={() => setclickValue(6)}>
+          <div  style={{ width: "200px"}}  onClick={() => setclickValue(6)}>
             <img
-              id="#image"
+              className="fabric-image"
               src="https://img.freepik.com/premium-photo/sex-orgasm-concept-with-banana-crumpled-silk-sheet_695716-196.jpg?size=626&ext=jpg"
               alt="title or description"
-              style={{ width: "100%", height: "350px" }}
+              // style={{ width: "100%", height: "350px" }}
               // data-action="http://andyyou.github.io/react-coverflow/"
             />
-          </div>
+          </div> */}
         </Coverflow>
       </div>
       {clickValue == 1 && <div>Thi is first slide</div>}
