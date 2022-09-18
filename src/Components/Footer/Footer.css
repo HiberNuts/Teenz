@@ -1,11 +1,14 @@
 .footercontainer{
-    height: 300px;
+    height: 260px;
     background-color: black;
+    overflow: hidden;
 }
 
 
 .footerinnercontainer{
-    margin-top: 40px;
+    height: 100%;
+    
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -29,4 +32,18 @@ img{
     /* letter-spacing:10px; */
     font-family: 'Great Vibes', cursive;
     cursor: pointer;
+}
+.footerinnercontainer > div{
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footerinnercontainer >h4{
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-links > img{
+    margin: -3px 10px 10px 10px;
 }

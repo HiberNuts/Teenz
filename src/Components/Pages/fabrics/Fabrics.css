@@ -15,15 +15,15 @@
 .fabric>h4{
     color: white;
   margin:0;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 40px;
+  font-family: 'Square Peg', cursive;
+    font-size: 45px;
     background-color: black;
 }
 
 
 .fabric-image{
    width: 300px;
-   height: 250px;
+   height: 200px;
   
 }
 

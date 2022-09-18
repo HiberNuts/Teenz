@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Fabrics.css";
 import Coverflow from "react-coverflow";
 import AOS from "aos";
+import { Footer } from "../../Footer/Footer";
 
 export const Fabrics = () => {
   const [clickValue, setclickValue] = useState(0);
@@ -68,7 +69,7 @@ export const Fabrics = () => {
             },
             "@media (min-width: 900px)": {
               width: "960px",
-              height: "400px",
+              height: "350px",
             },
             // "@media (min-width: 700px)": {
             //   width: "500px",
@@ -140,6 +141,7 @@ export const Fabrics = () => {
       {clickValue == 2 && <div>Thi is second slide</div>}
       {clickValue == 3 && <div>Thi is third slide</div>}
       {clickValue == 4 && <div>Thi is fourth slide</div>}
+      <Footer></Footer>
     </div>
   );
 };
