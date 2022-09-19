@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
@@ -57,6 +56,7 @@ export const Navbar = ({ countryName, city, region }) => {
           <i class="fa-solid fa-user"></i>
         </div>
         <div className="location">
+          <i class="fa-solid fa-location-dot"></i>
           <p>{city},</p>
           <p>{region},</p>
           <p>{countryName}</p>

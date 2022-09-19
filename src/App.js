@@ -33,7 +33,7 @@ function App() {
   };
   useEffect(() => {
     getGeoInfo();
-  }, []);
+  }, [countryName, city, region]);
   return (
     <div className="App">
       <PreNav></PreNav>

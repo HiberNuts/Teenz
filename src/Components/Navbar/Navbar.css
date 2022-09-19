@@ -96,12 +96,16 @@
 }
 .location{
     display: flex;
+    
     border: 3px solid teal;
-    margin: 2px;
+   
     padding: 10px;
     font-size: 15px;
 }
 
 .location > p{
     margin-left: 5px;
+}
+.location>i{
+    margin-top: 5px;
 }
