@@ -1,15 +1,13 @@
 .footercontainer{
-    height: 260px;
     background-color: black;
     overflow: hidden;
-    bottom: 0;
+    
 }
 
 
 .footerinnercontainer{
     height: 100%;
-    
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -46,5 +44,5 @@ img{
 }
 
 .footer-links > img{
-    margin: -3px 10px 10px 10px;
+    margin: -3px 10px 0px 10px;
 }

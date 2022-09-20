@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
-export const Navbar = ({ countryName, city, region }) => {
+export const Navbar = () => {
   const navigate = useNavigate();
 
   return (
@@ -55,12 +55,12 @@ export const Navbar = ({ countryName, city, region }) => {
           <i class="fa-solid fa-cart-shopping"></i>
           <i class="fa-solid fa-user"></i>
         </div>
-        <div className="location">
+        {/* <div className="location">
           <i class="fa-solid fa-location-dot"></i>
           <p>{city},</p>
           <p>{region},</p>
           <p>{countryName}</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

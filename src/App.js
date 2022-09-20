@@ -12,34 +12,38 @@ import Scrolltotop from "./Scrolltotop";
 import Location from "./Components/location/Location";
 import { Footer } from "./Components/Footer/Footer";
 function App() {
-  const [countryName, setcountryName] = useState("");
-  const [countryCode, setcountryCode] = useState("");
-  const [city, setcity] = useState("");
-  const [region, setregion] = useState("");
-  const getGeoInfo = () => {
-    axios
-      .get("https://ipapi.co/json/")
-      .then((response) => {
-        let data = response.data;
+  // const [countryName, setcountryName] = useState("");
+  // const [countryCode, setcountryCode] = useState("");
+  // const [city, setcity] = useState("");
+  // const [region, setregion] = useState("");
+  // const getGeoInfo = () => {
+  //   axios
+  //     .get("https://ipapi.co/json/")
+  //     .then((response) => {
+  //       let data = response.data;
 
-        setcountryName(data.country_name);
-        setcountryCode(data.country_calling_code);
-        setcity(data.city);
-        setregion(data.region);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-  useEffect(() => {
-    getGeoInfo();
-  }, [countryName, city, region]);
+  //       setcountryName(data.country_name);
+  //       setcountryCode(data.country_calling_code);
+  //       setcity(data.city);
+  //       setregion(data.region);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
+  // useEffect(() => {
+  //   getGeoInfo();
+  // }, [countryName, city, region]);
+
+
+
   return (
     <div className="App">
       <PreNav></PreNav>
       <BrowserRouter>
         <Scrolltotop></Scrolltotop>
-        <Navbar countryName={countryName} city={city} region={region} />
+        {/* <Navbar countryName={countryName} city={city} region={region} /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Landing />}></Route>
           <Route path="/wedding" element={<Wedding />}></Route>
