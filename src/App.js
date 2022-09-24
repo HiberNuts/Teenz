@@ -14,6 +14,8 @@ import { Partywear } from "./Components/Pages/Partywear";
 import { Ordernowparty } from "./Components/Pages/OrdernowParty";
 import { Indo } from "./Components/Pages/Indo";
 import { Ordernowindo } from "./Components/Pages/Ordernowindo";
+import  Sidebar  from "./Components/sidebar/Sidebar";
+
 function App() {
   return (
     <div className="App">
@@ -33,6 +35,7 @@ function App() {
           <Route path="/ordernow/Ethnic" element={<OrdernowEthinic />}></Route>
           <Route path="/ordernow/Party" element={<Ordernowparty />}></Route>
           <Route path="/ordernow/indo" element={<Ordernowindo />}></Route>
+          <Route path="/sidebar" element={<Sidebar />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

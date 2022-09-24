@@ -21,7 +21,7 @@
     height: 65px;
     display: flex;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: black;
     color: white;
@@ -85,7 +85,7 @@
 
 }
 
-@media screen and (max-width:638px) {
+@media screen and (max-width:800px) {
     .navoptions{
         display: none;
     }

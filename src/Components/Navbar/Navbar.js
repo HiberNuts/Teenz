@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
+import Sidebar from "../sidebar/Sidebar";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -63,6 +64,15 @@ export const Navbar = () => {
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-cart-shopping"></i>
           <i class="fa-solid fa-user"></i>
+        </div>
+        <div
+          style={{
+            "@media (min-width: 800px)": {
+              display: "none",
+            },
+          }}
+        >
+          <Sidebar />
         </div>
       </div>
     </div>
