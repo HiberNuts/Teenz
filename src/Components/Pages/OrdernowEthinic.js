@@ -1,25 +1,23 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Footer } from "../Footer/Footer";
-import { TextField } from "@mui/material";
+import { TextField, Button } from "@mui/material";
 import FormHelperText from "@mui/material/FormHelperText";
 import "./ordernow.css";
-export const Ordernow = () => {
+export const OrdernowEthinic = () => {
 	const [stepper, setStepper] = useState(0);
 	const { type } = useParams();
 
 	return (
 		<div>
 			<div className="ordernowcontainer">
-				<span className="wdorheading">Wedding Collections</span>
+				<span className="wdorheading">Ethnic Collections</span>
 				{stepper == 0 ? (
 					<div className="ordernowcontainer">
 						<span className="wdorh2">Customisation</span>
 						<div
 							style={{
-								// width: "500px",
 								display: "flex"
-								// justifyContent: "space-between"
 							}}
 						>
 							<div
@@ -36,13 +34,30 @@ export const Ordernow = () => {
 										marginBottom: "20px"
 									}}
 								>
-									<TextField label="styling for ?" color="primary" />
-									<FormHelperText>Eg: Bride, Groom</FormHelperText>
+									<TextField label="Gender" color="primary" />
+									<FormHelperText>Eg: Male, Female</FormHelperText>
 								</div>
-								<div style={{ display: "flex", flexDirection: "column" }}>
+								<div
+									style={{
+										display: "flex",
+										flexDirection: "column",
+										marginBottom: "30px"
+									}}
+								>
 									<TextField label="Clothing choice ?" color="primary" />
-									<FormHelperText>Eg: Lehanga, Saree, Dothi</FormHelperText>
+									<FormHelperText>Eg: Kurta, Salwar, Anarkali</FormHelperText>
 								</div>
+								<Button
+									style={{
+										backgroundColor: "rgb(82, 0, 57)",
+										fontSize: "12px"
+									}}
+									variant="contained"
+									component="label"
+								>
+									Upload Design
+									<input hidden accept="image/*" multiple type="file" />
+								</Button>
 							</div>
 							<div style={{ display: "flex", flexDirection: "column" }}>
 								<div
@@ -53,14 +68,14 @@ export const Ordernow = () => {
 									}}
 								>
 									<TextField label="Fabric" color="primary" />
-									<FormHelperText>Eg: Silk, Satin, Linen</FormHelperText>
+									<FormHelperText>Eg: Cotton, Linen, Silk</FormHelperText>
 								</div>
 								<TextField
 									color="primary"
 									id="outlined-multiline-static"
 									label="Custom Note"
 									multiline
-									rows={4}
+									rows={5}
 									placeholder="If any"
 									// defaultValue="Default Value"
 								/>

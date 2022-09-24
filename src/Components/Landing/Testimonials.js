@@ -39,7 +39,7 @@ export const Testimonials = () => {
   };
 
   return (
-    <div className="testimonialscontianer">
+    <div className="testimonialscontianer" id="testimonialsdiv">
       <div className="testWrapper">
         <h2>Testimonials</h2>
         {testimonials.length && (
